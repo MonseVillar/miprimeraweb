@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Bienvenidos</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav style="background-color: #80cbc4;" style="position:fixed; z-index:999;">
+    <div class="nav-wrapper">
+      <a  href="#" class="brand-logo center">MBM 19</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <li class="{% if template_padre == 'index' %}active{% else %}{% endif %}"><a href="{% url 'index' %}">Intro</a></li>
+      <li class="{% if template_padre == 'preguntas' %}active{% else %}{% endif %}"><a href="{% url 'preguntas' %}">Preguntas</a></li>
+      <li class="{% if template_padre == 'informacion' %}active{% else %}{% endif %}"><a href="{% url 'informacion'%}">Informacion</a></li>
+    
+        
+      </ul>
+    </div>
+</nav>
+ 
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Bienvenidos</h1>
+        <div class="row center">
+          <h5  class="header col s12 black-text">¿Quieres saber que tan problable es que tengas coronavirus?</h5>
+        </div>
+        <div class= "row center align">
+          <a style="background-color: #63C7B2;" href="{% url 'preguntas'%}" class="waves-effect waves-light btn">Responde las siguientes preguntas</a>
+          
+      </div> 
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="coronavirus.jpg" alt="Unsplashed coronavirus"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">public</i></h2>
+            <h5 class="center">Brotes de coronavirus en el mundo</h5>
+
+            <p class="light">Sabias que este no es el primer brote de coronavirus, en 2002 se registró en China un brote asociado al Síndrome Respiratorio Agudo Grave (SARS-CoV), el cual, cobró la vida de alrededor de 774 personas y tuvo una tasa de mortalidad del 10 por ciento.Mientras que en 2012 se registró el Síndrome Respiratorio Agudo de Oriente Medio (MERS-CoV) y hasta octubre del 2019 se han registrado casos de esta enfermedad viral.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Transmisión entre personas</h5>
+
+            <p class="light">Sabias que los coronavirus humanos se transmiten de una persona infectada a otra a través del aire al toser y estornudar, al tocar o estrechar la mano de una perosna enferma, o al tocar un objeto o superficie con el virus y luego tocarse la boca, la nariz o los ojos antes de lavarse las manos. </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">colorize</i></h2>
+            <h5 class="center">Vacuna</h5>
+
+            <p class="light">La Organización Mundial de la Salud (OMS) se ha mostrado "optimista" y ha asegurado que espera que haya "cientos de millones de dosis" de vacunas contra el coronavirus para finales de año. Todos los días científicos de todo el mundo trabajan duramente para poder sacar una vacuna efectiva y que puede ser rápidamente masaficada para asi acabar con la pandemia.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+ 
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+          <p class="grey-text text-lighten-4"> Beatriz Ordoñez </p>
+          <p class="grey-text text-lighten-4"> Maria José Pizarro </p>
+          <p class="grey-text text-lighten-4"> Monserra Villar </p>
+        </div>
+
+        <div class="col l1 offset-l8 s12">
+          <img src="UAI.jpg" height="100">
+          <p class="grey-text text-lighten-4"> +56991540515 </p>
+          
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="footer-copyright">
+      <div class="container">
+     <a class=" brown-text text-lighten-3" >@Made by MBM</a>
+      </div>
+    </div>
+    
+  </footer>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
